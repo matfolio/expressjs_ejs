@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>
+    <% include ../partials/header.ejs %>  <!-- <===  that is the partials for the view containg the header file   -->
+  </head>
+  <body>
+    
+    <div class ="row">
+      <div class ="well" style="float:left;"> <% Info.forEach(function(info)  { %>
+          <div class="well library">
+            <h1> Name: <%= info.Name %> </h1>
+            <h1> Age: <%= info.Age %> </h1>
+            <h1> Profession: <%= info.Profession %> </h1>
+          </div>
+        <% }); %> <!-- clossing the ejs tag. Notice the opening and clossing curly braces -->
+      </div>
+
+  </div>
+  </body>
+</html> 
