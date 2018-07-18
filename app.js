@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+const PORT = process.env.PORT || 5000;
 
 //var cookieParser = require('cookie-parser');
 //app.use(cookieParser());
@@ -44,4 +45,4 @@ app.get('/', function(req, res){
 
 });
 
-app.listen(3000); // Routing on port 3000
+app.listen(PORT); // Routing on port 3000
